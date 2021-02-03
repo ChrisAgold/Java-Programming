@@ -26,6 +26,9 @@ public class Accounts {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 
+    public Accounts(String customerPhoneNumber, String customerName, String customerEmail) {
+        this("9999", 100.55, customerName, customerEmail, customerPhoneNumber);
+    }
 
     // deposit method
     public void deposit(double depositAmount) {
@@ -43,7 +46,6 @@ public class Accounts {
             System.out.println("Withdrawal of " + withdrawalAmount + " processed. Remaining balance = " + this.balance);
         }
     }
-
 
     // Getters & Setters
     public String getNumber() {
