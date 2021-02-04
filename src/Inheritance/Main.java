@@ -10,4 +10,5 @@ public class Main {
         dog.walk();
         // dog.run();
     }
+
 }
