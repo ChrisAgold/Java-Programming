@@ -30,9 +30,9 @@ public class Car extends Vehicle {
 
     // method
     public void changeVelocity(int speed, int direction) {
+        System.out.println("Car.changeVelocity(): Velocity " + speed + " direction " + direction);
         // calls move method
         move(speed, direction);
-        System.out.println("Car.changeVelocity(): Velocity " + speed + " direction " + direction);
     }
 
     // override vehicle stop method
