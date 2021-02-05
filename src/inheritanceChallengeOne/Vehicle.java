@@ -11,9 +11,8 @@ public class Vehicle {
     public Vehicle(String name, String size) {
         this.name = name;
         this.size = size;
-
-this.currentVelocity = 0;
-this.currentDirection = 0;
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
     }
 
     // Methods
@@ -58,5 +57,10 @@ this.currentDirection = 0;
 
     public void setCurrentDirection(int currentDirection) {
         this.currentDirection = currentDirection;
+    }
+
+    // method for stopping
+    public void stop() {
+        this.currentVelocity = 0;
     }
 }
