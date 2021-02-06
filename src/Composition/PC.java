@@ -15,15 +15,31 @@ public class PC {
     }
 
     // Getters
-    public Case getTheCase() {
+    // changed to private so not accessible by main class anymore
+    private Case getTheCase() {
         return theCase;
     }
 
-    public Monitor getMonitor() {
-        return monitor;
+    // function
+    public void powerUp() {
+        theCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
+    // private method for drawLogo
+    private void drawLogo() {
+        // Fancy graphics
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
+
+
+
+
+
+//    private Monitor getMonitor() {
+//        return monitor;
+//    }
+//    private Motherboard getMotherboard() {
+//        return motherboard;
+//    }
 }
