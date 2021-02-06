@@ -1,6 +1,7 @@
 package encaptulation;
 
 public class EnhancedPlayer {
+
     private String name;
     private int hitpoints = 100; // default health set to 100
     private String weapon;
@@ -25,6 +26,4 @@ public class EnhancedPlayer {
     public int getHealth() {
         return hitpoints;
     }
-
-
 }
