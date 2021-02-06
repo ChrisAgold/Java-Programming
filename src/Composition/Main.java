@@ -40,11 +40,24 @@ public class Main {
         // then add at least one method to hide the object e.g. not using a getter
         // but to access the object used in composition within the main class
 
+        // Make new walls
+        Wall wall1 = new Wall("West");
+        Wall wall2 = new Wall("East");
+        Wall wall3 = new Wall("South");
+        Wall wall4 = new Wall("North");
 
+        // Create ceiling
+        Ceiling ceiling = new Ceiling(12, 55);
 
+        // Create Bed
+        Bed bed = new Bed("Modern", 4, 3, 2 ,1 );
 
+        // Create lamp
+        Lamp lamp = new Lamp("Classic", false, 75);
 
+        // Create Bedroom
+        Bedroom bedRoom = new Bedroom("Tims", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
 
-
+        bedRoom.getLamp().turnOn();
     }
 }
