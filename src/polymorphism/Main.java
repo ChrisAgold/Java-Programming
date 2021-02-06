@@ -96,7 +96,6 @@ public class Main {
             case 5:
                 return new Forgetable();
         }
-
         return null;
     }
 }
