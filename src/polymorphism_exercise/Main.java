@@ -1,63 +1,5 @@
 package polymorphism_exercise;
 
-class Car {
-    private boolean engine;
-    private int cylinders;
-    private String name;
-    private int wheels;
-    // Constructor
-    public Car(int cylinders, String name) {
-        this.cylinders = cylinders;
-        this.name = name;
-        this.wheels = 4;
-        this.engine = true;
-    }
-
-    // Getter
-    public int getCylinders() {
-        return cylinders;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    // Methods
-    public String startEngine() {
-        return "Car -> startEngine()";
-    }
-
-    public String accelerate() {
-        return "Car -> accelerate()";
-    }
-
-    public String brake() {
-        return "Car -> brake()";
-    }
-}
-
-// Make new car class
-class Mitsubishi extends Car {
-    public Mitsubishi(int cylinders, String name) {
-        super(cylinders, name);
-    }
-    // Override parent methods
-    @Override
-    public String startEngine() {
-        return "Mitsubishi -> startEngine()";
-    }
-
-    @Override
-    public String accelerate() {
-        return "Mitsubishi -> accelerate()";
-    }
-
-    @Override
-    public String brake() {
-        return "Mitsubishi -> brake()";
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         // We are going to go back to the car analogy.
@@ -79,5 +21,21 @@ public class Main {
         System.out.println(car.startEngine());
         System.out.println(car.accelerate());
         System.out.println(car.brake());
+
+        Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander");
+        System.out.println(mitsubishi.startEngine());
+        System.out.println(mitsubishi.accelerate());
+        System.out.println(mitsubishi.brake());
+
+        Ford ford = new Ford(6, "Ford Falcon");
+        System.out.println(ford.startEngine());
+        System.out.println(ford.accelerate());
+        System.out.println(ford.brake());
+
+        Toyota toyota = new Toyota(6, "Highlander");
+        System.out.println(toyota.startEngine());
+        System.out.println(toyota.accelerate());
+        System.out.println(toyota.brake());
     }
+
 }
