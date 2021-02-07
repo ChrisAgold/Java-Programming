@@ -31,11 +31,12 @@ public class Main {
         // For the two additional classes this may require you to be looking at the base class for pricing and then
         // adding totals to final price.
 
+        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White Bun ");
+        double price = hamburger.itemizeHamburger();
 
-
-
-
-
-
+        hamburger.addHamburgerAddition1("Tomato", 0.27);
+        hamburger.addHamburgerAddition2("Lettuce", 0.75);
+        hamburger.addHamburgerAddition3("Cheese", 0.12);
+        price = hamburger.itemizeHamburger();
     }
 }
