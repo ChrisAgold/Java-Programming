@@ -1,41 +1,43 @@
-package arrays;
+package Arrays;
 
 import java.util.Scanner;
 
-public class Arrays {
+public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // int[] myIntArray = new int[10]; //{1,2,3,4,5,6,7,8,9,10};
+
 //        myIntArray[0] = 45;
 //        myIntArray[1] = 476;
-//        myIntArray[5] = 50;
+//        myIntArray[5] = 50; // 50 saved to element 6
 
-//        double[] myDoubleArray = new double[10];
+        // double[] myDoubleArray = new double[10];
 //        System.out.println(myIntArray[0]);
 //        System.out.println(myIntArray[6]);
 //        System.out.println(myIntArray[8]);
 
+//        int[] myIntArray = new int[25]; // {1,2,3,4,5,6,7,8,9,10};
 //        for (int i = 0; i < myIntArray.length; i++) {
 //            myIntArray[i] = i * 10;
 //        }
 //        printArray(myIntArray);
 //    }
 //
+//    // Method to print array
 //    public static void printArray(int[] array) {
 //        for (int i = 0; i < array.length; i++) {
-//            System.out.println("Element " + i + ", value is " + array[i]);
+//            System.out.println("Element " + i + " value is " + array[i]);
 //        }
 
-        // Main Method
+        // Sum Total of Numbers Entered by User
         int[] myIntegers = getIntegers(5);
-        for(int i =0;i<myIntegers.length;i++) {
+
+        for (int i = 0; i < myIntegers.length; i++) {
             System.out.println("Element " + i + ", typed value was " + myIntegers[i]);
         }
         System.out.println("The average is " + getAverage(myIntegers));
     }
 
-    // Method to return 5 typed numbers user enters in console
     public static int[] getIntegers(int number) {
         System.out.println("Enter " + number + " integer values.\r");
         int[] values = new int[number];
@@ -46,12 +48,21 @@ public class Arrays {
         return values;
     }
 
-    // return average of elements entered
+    // Return Average of Numbers from array
     public static double getAverage(int[] array) {
         int sum = 0;
-        for(int i =0;i<array.length;i++) {
+        for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        return (double) sum / (double)array.length;
+        return (double) sum / (double) array.length;
     }
+
 }
+
+
+
+
+
+
+
+
