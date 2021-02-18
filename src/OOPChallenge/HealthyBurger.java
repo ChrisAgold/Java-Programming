@@ -1,4 +1,4 @@
-package OOPChllenge;
+package OOPChallenge;
 
 public class HealthyBurger extends Hamburger {
     private String healthyExtra1Name;
@@ -35,7 +35,3 @@ public class HealthyBurger extends Hamburger {
         return hamburgerPrice;
     }
 }
-
-
-
-

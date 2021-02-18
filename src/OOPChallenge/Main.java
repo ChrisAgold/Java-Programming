@@ -1,8 +1,8 @@
-package OOPChllenge;
+package OOPChallenge;
 
 public class Main {
     public static void main(String[] args) {
-// The purpose of the application is to help a ficticious company called Bills Burgers to manage
+// The purpose of the application is to help a fictitious company called Bills Burgers to manage
         // their process of selling hamburgers.
         // Our application will help Bill to select types of burgers, some of the additional items (additions) to
         // be added to the burgers and pricing.
@@ -26,7 +26,7 @@ public class Main {
         // hint:  You have to find a way to automatically add these new additions at the time the deluxe burger
         // object is created, and then prevent other additions being made.
         //  All 3 classes should have a method that can be called anytime to show the base price of the hamburger
-        // plus all additionals, each showing the addition name, and addition price, and a grand/final total for the
+        // plus all additional, each showing the addition name, and addition price, and a grand/final total for the
         // burger (base price + all additions)
         // For the two additional classes this may require you to be looking at the base class for pricing and then
         // adding totals to final price.
@@ -45,6 +45,5 @@ public class Main {
 
         DeluxeBurger db = new DeluxeBurger();
         db.itemizeHamburger();
-
     }
 }

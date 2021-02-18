@@ -1,4 +1,4 @@
-package OOPChllenge;
+package OOPChallenge;
 
 public class DeluxeBurger extends Hamburger{
     @Override
@@ -25,13 +25,5 @@ public class DeluxeBurger extends Hamburger{
         super("Deluxe", "Sausage & Bacon", 14.54, "White");
         super.addHamburgerAddition1("Chips", 2.57);
         super.addHamburgerAddition2("Drink", 1.18);
-
-
-
     }
-
-
-
-
-
 }
